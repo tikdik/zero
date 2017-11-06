@@ -9,9 +9,9 @@
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
-  <!--<listener>-->
-    <!--<listener-class>com.phicomm.mobile.im.module.close.CloseHook</listener-class>-->
-  <!--</listener>-->
+  <listener>
+    <listener-class>com.tikdik.framework.base.module.close.CloseHook</listener-class>
+  </listener>
 
   <servlet>
     <servlet-name>spring</servlet-name>
@@ -25,23 +25,11 @@
     <servlet-name>spring</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
-  <!-- authorization -->
-  <!--<filter>-->
-    <!--<filter-name>phicommAuthorization</filter-name>-->
-    <!--<filter-class>com.phicomm.mobile.im.module.authorization.PhicommAuthorizationFilter</filter-class>-->
-    <!--<init-param>-->
-      <!--<param-name>whiteList</param-name>-->
-      <!--<param-value>filterWhiteList.xml</param-value>-->
-    <!--</init-param>-->
-  <!--</filter>-->
-  <!--<filter-mapping>-->
-    <!--<filter-name>phicommAuthorization</filter-name>-->
-    <!--<url-pattern>/*</url-pattern>-->
-  <!--</filter-mapping>-->
+
   <!-- swagger-ui接口文档需要登录才可以查看 -->
   <filter>
     <filter-name>swaggerUIFilter</filter-name>
-    <filter-class>com.phicomm.mobile.im.module.swagger.SwaggerUIFilter</filter-class>
+    <filter-class>com.tikdik.framework.base.module.swagger.SwaggerUIFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>swaggerUIFilter</filter-name>
@@ -72,7 +60,7 @@
     <init-param>
       <!-- 密码 -->
       <param-name>loginPassword</param-name>
-      <param-value>b263eaf7e256e412d38b93c4ccea2af8</param-value>
+      <param-value>123456</param-value>
     </init-param>
   </servlet>
   <servlet-mapping>

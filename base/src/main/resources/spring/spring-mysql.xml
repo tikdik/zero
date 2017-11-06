@@ -48,7 +48,7 @@
 
     <!-- mybatis扫描包名记得修改 -->
     <bean id="mysqlMapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.phicomm.mobile.im.dao.mysql"/>
+        <property name="basePackage" value="com.tikdik.framework.base.dao"/>
         <property name="sqlSessionFactoryBeanName" value="mysqlSessionFactory"/>
     </bean>
 
