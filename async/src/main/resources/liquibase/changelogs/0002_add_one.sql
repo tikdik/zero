@@ -1,4 +1,4 @@
---liquibase formatted sql
+--liquibase formatted sql logicalFilePath:0002_add_one.sql
 --changeset tikdik:201711061806
 CREATE TABLE `one` (
 	`id` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
