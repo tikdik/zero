@@ -9,6 +9,6 @@
 ### async
 它在base的基础上加入了rabbitmq消息队列
 
-### async
+### async_handler
 它是async的异步消息处理程序。
 基于srping + mybatis + rabbitmq
