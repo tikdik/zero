@@ -12,3 +12,8 @@
 ### async_handler
 它是async的异步消息处理程序。
 基于srping + mybatis + rabbitmq
+
+### sharding
+实现两个功能：
+ - 分库分表
+ - 支持多数据源
