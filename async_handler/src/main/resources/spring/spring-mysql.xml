@@ -38,7 +38,7 @@
         <property name="filters" value="stat"/>
     </bean>
 
-
+    <!-- mybatis -->
     <bean id="mysqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="configLocation" value="classpath:mybatis-mysql-config.xml"/>
         <property name="dataSource" ref="dataSource"/>
