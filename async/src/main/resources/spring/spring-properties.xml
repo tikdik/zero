@@ -7,5 +7,5 @@
     <!-- 引入属性文件 -->
     <context:property-placeholder location="classpath:conf.properties,
         classpath:redis.properties,classpath:mysql.properties,
-        classpath:swagger.properties" file-encoding="UTF-8"/>
+        classpath:swagger.properties,classpath:rabbitmq.properties" file-encoding="UTF-8"/>
 </beans>

@@ -22,6 +22,17 @@ public class ExceptionUtil {
      *
      * @param e 异常
      */
+    public static void errInfo(Exception e) {
+        if (e == null) {
+            return;
+        }
+        logger.info(getErrorMessage(e));
+    }
+    /**
+     * 获取异常信息
+     *
+     * @param e 异常
+     */
     public static String getErrorMessage(Exception e) {
         StringWriter sw = null;
         PrintWriter pw = null;

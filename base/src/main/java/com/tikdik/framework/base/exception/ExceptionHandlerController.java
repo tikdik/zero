@@ -18,18 +18,6 @@ public class ExceptionHandlerController {
 
     private static final Logger logger = Logger.getLogger(ExceptionHandlerController.class);
 
-    /**
-     * 获取异常信息
-     *
-     * @param e 异常
-     */
-    public static void errInfo(Exception e) {
-        if (e == null) {
-            return;
-        }
-        logger.info(ExceptionUtil.getErrorMessage(e));
-    }
-
     @ExceptionHandler(Exception.class)
     @ResponseBody
     public Response processException(Exception e) {
