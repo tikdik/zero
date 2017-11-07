@@ -39,7 +39,7 @@
     </bean>
 
 
-    <rdb:strategy id="tableShardingStrategy" sharding-columns="id" algorithm-expression="sharding_${id.longValue() % 16}"/>
+    <rdb:strategy id="tableShardingStrategy" sharding-columns="id" algorithm-expression="sharding_${(id.longValue() >> 22) % 16}"/>
 
     <rdb:data-source id="shardingDataSource">
         <rdb:sharding-rule data-sources="dataSource">
